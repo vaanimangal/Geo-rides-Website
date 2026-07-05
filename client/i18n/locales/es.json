@@ -1,0 +1,170 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "whyUs": "Por qué nosotros",
+    "faq": "Preguntas frecuentes",
+    "contact": "Contacto",
+    "login": "Iniciar sesión",
+    "logout": "Cerrar sesión"
+  },
+  "hero": {
+    "headline": "Reserva tu viaje en cualquier momento, en cualquier lugar",
+    "subheadline": "Transporte rápido, seguro y asequible con Geo Rides",
+    "description": "Viaja de punto A a punto B con facilidad. Elige entre motos, autos, taxis o vehículos de alquiler.",
+    "pickupLabel": "Ubicación de recogida",
+    "dropoffLabel": "Ubicación de entrega",
+    "vehicleLabel": "Tipo de vehículo",
+    "bookBtn": "Reservar viaje"
+  },
+  "services": {
+    "title": "Nuestros servicios",
+    "subtitle": "Elige el servicio que se adapte a tus necesidades",
+    "bikeTaxi": "Taxi en moto",
+    "bikeTaxiDesc": "Viajes rápidos y asequibles en dos ruedas",
+    "autoRide": "Viaje en auto",
+    "autoRideDesc": "Auto-rickshaw cómodo para distancias cortas",
+    "cabBooking": "Reserva de taxi",
+    "cabBookingDesc": "Sedán premium para un viaje cómodo",
+    "vehicleRental": "Alquiler de vehículos",
+    "vehicleRentalDesc": "Autos de autoservicio para viajes largos",
+    "parcelDelivery": "Entrega de paquetes",
+    "parcelDeliveryDesc": "Entrega rápida y segura de paquetes",
+    "learnMore": "Aprende más"
+  },
+  "whyChoose": {
+    "title": "Por qué elegir Geo Rides",
+    "subtitle": "Experimenta la diferencia con nuestro compromiso de seguridad y calidad",
+    "affordablePricing": "Precios asequibles",
+    "affordablePricingDesc": "Tarifas competitivas con precios transparentes",
+    "verifiedDrivers": "Conductores verificados",
+    "verifiedDriversDesc": "Conductores verificados por antecedentes para tu seguridad",
+    "realTimeTracking": "Seguimiento en tiempo real",
+    "realTimeTrackingDesc": "Rastrea tu viaje en tiempo real con GPS",
+    "availability24": "Disponibilidad 24/7",
+    "availability24Desc": "Disponible en cualquier momento, día o noche"
+  },
+  "howItWorks": {
+    "title": "Cómo funciona",
+    "subtitle": "Tres sencillos pasos para tu próximo viaje",
+    "step1": "Ingresa recogida y destino",
+    "step1Desc": "Cuéntanos dónde estás y dónde quieres ir",
+    "step2": "Elige tu vehículo",
+    "step2Desc": "Selecciona entre motos, autos, taxis o alquileres",
+    "step3": "Confirma y viaja",
+    "step3Desc": "Confirma tu reserva y ve llegar a tu conductor en tiempo real"
+  },
+  "studentPlans": {
+    "title": "Planes especiales para estudiantes",
+    "description": "Creemos en hacer el transporte asequible para estudiantes. Disfruta de descuentos exclusivos.",
+    "monthlyPass": "Pase mensual de viajes",
+    "monthlyPassDesc": "Obtén 30% de descuento en todos los viajes con pase mensual ilimitado",
+    "collegeCommute": "Planes de viaje a la universidad",
+    "collegeCommuteDesc": "Precios especiales para viajes regulares entre universidad y hogar",
+    "cashback": "Recompensas de cashback",
+    "cashbackDesc": "Gana 5% de cashback en cada viaje",
+    "getPass": "Obtener pase de estudiante",
+    "joinStudents": "Únete a 50,000+ estudiantes"
+  },
+  "safety": {
+    "title": "Tu seguridad es nuestra prioridad",
+    "subtitle": "Características de seguridad avanzadas para tu tranquilidad",
+    "emergencySOS": "SOS de emergencia",
+    "emergencySOSDesc": "Botón de emergencia de un toque para alertar a las autoridades",
+    "liveSharing": "Compartir viaje en vivo",
+    "liveSharingDesc": "Comparte tu ubicación en vivo con contactos de emergencia",
+    "driverVerification": "Verificación de conductor",
+    "driverVerificationDesc": "Todos los conductores son verificados y certificados",
+    "tripMonitoring": "Monitoreo de viajes",
+    "tripMonitoringDesc": "Cada viaje se monitorea para calidad y seguridad"
+  },
+  "driverPartner": {
+    "title": "Conviértete en socio conductor",
+    "description": "Únete a miles de conductores ganando con Geo Rides. Establece tus propias horas.",
+    "flexibleHours": "Horarios flexibles",
+    "weeklyEarnings": "Ganancias semanales",
+    "easyRegistration": "Registro fácil",
+    "support24": "Soporte de conductor 24/7",
+    "registerBtn": "Registrarse ahora",
+    "earnIncome": "Gana ingresos adicionales"
+  },
+  "testimonials": {
+    "title": "Qué dicen nuestros clientes",
+    "subtitle": "Únete a miles de viajeros satisfechos"
+  },
+  "mobileApp": {
+    "title": "Descarga nuestra aplicación",
+    "description": "Reserva viajes sobre la marcha con nuestra aplicación móvil intuitiva.",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "downloadOn": "Descargar en",
+    "getItOn": "Obtener en"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "subtitle": "Encuentra respuestas a preguntas comunes",
+    "q1": "¿Cómo reservo un viaje?",
+    "a1": "Simplemente abre la aplicación, ingresa tu ubicación de recogida y destino, elige tu vehículo.",
+    "q2": "¿Están verificados los conductores?",
+    "a2": "Sí, todos nuestros conductores pasan verificaciones de antecedentes. Tu seguridad es nuestra prioridad.",
+    "q3": "¿Qué métodos de pago se aceptan?",
+    "a3": "Aceptamos tarjetas de crédito/débito, billeteras digitales, UPI y efectivo.",
+    "q4": "¿Puedo programar un viaje con anticipación?",
+    "a4": "Sí, puedes programar viajes hasta 30 días antes sin costo adicional.",
+    "q5": "¿Qué pasa si necesito cancelar mi viaje?",
+    "a5": "Puedes cancelar sin cargo si cancelas dentro de 2 minutos de la reserva."
+  },
+  "contact": {
+    "title": "Ponte en contacto",
+    "subtitle": "¿Tienes preguntas? Estamos aquí para ayudarte",
+    "nameLabel": "Tu nombre",
+    "emailLabel": "Tu correo",
+    "messageLabel": "Tu mensaje",
+    "sendBtn": "Enviar mensaje",
+    "emailContact": "Correo",
+    "emailAddress": "support@georides.com",
+    "phoneContact": "Teléfono",
+    "phoneNumber": "+91 9876 543 210",
+    "locationContact": "Sede",
+    "locationText": "Disponible en 50+ ciudades en India",
+    "support24": "Soporte 24/7",
+    "supportDesc": "Nuestro equipo de soporte al cliente siempre está disponible"
+  },
+  "footer": {
+    "about": "Acerca de nosotros",
+    "services": "Servicios",
+    "privacy": "Política de privacidad",
+    "terms": "Términos y condiciones",
+    "cancellation": "Política de cancelación",
+    "copyright": "© 2024 Geo Rides. Todos los derechos reservados.",
+    "quickLinks": "Enlaces rápidos",
+    "legal": "Legal",
+    "contactInfo": "Información de contacto"
+  },
+  "login": {
+    "title": "Iniciar sesión",
+    "subtitle": "Bienvenido de nuevo a Geo Rides",
+    "email": "Correo",
+    "password": "Contraseña",
+    "signIn": "Iniciar sesión",
+    "signUp": "Registrarse",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "orSignInWith": "O inicia sesión con",
+    "google": "Google",
+    "github": "GitHub",
+    "noAccount": "¿No tienes cuenta?",
+    "createOne": "Crea una"
+  },
+  "register": {
+    "title": "Crear cuenta",
+    "subtitle": "Únete a Geo Rides hoy",
+    "name": "Nombre completo",
+    "email": "Correo",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "phone": "Número de teléfono",
+    "signUp": "Registrarse",
+    "alreadyAccount": "¿Ya tienes cuenta?",
+    "signIn": "Inicia sesión"
+  }
+}

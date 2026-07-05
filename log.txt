@@ -1,0 +1,13 @@
+[31mfailed to load config from C:\Users\LENOVO\Downloads\geo-rides-booking-e51\vite.config.ts[39m
+[31merror when starting dev server:
+SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at readDB (file:///C:/Users/LENOVO/Downloads/geo-rides-booking-e51/node_modules/.vite-temp/vite.config.ts.timestamp-1782375875793-307f6d34fb6f7.mjs:19:14)
+    at file:///C:/Users/LENOVO/Downloads/geo-rides-booking-e51/node_modules/.vite-temp/vite.config.ts.timestamp-1782375875793-307f6d34fb6f7.mjs:24:12
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async loadConfigFromBundledFile (file:///C:/Users/LENOVO/Downloads/geo-rides-booking-e51/node_modules/vite/dist/node/chunks/node.js:35006:12)
+    at async bundleAndLoadConfigFile (file:///C:/Users/LENOVO/Downloads/geo-rides-booking-e51/node_modules/vite/dist/node/chunks/node.js:34872:17)
+    at async loadConfigFromFile (file:///C:/Users/LENOVO/Downloads/geo-rides-booking-e51/node_modules/vite/dist/node/chunks/node.js:34839:42)
+    at async resolveConfig (file:///C:/Users/LENOVO/Downloads/geo-rides-booking-e51/node_modules/vite/dist/node/chunks/node.js:34465:22)
+    at async _createServer (file:///C:/Users/LENOVO/Downloads/geo-rides-booking-e51/node_modules/vite/dist/node/chunks/node.js:26197:65)[39m
