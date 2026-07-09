@@ -20,18 +20,18 @@ export default function TripHistory() {
         {
             id: "GEO882KSL",
             date: "24 June 2026, 10:30 AM",
-            pickup: "Connaught Place, Delhi",
+            pickup: "Union Station, Toronto",
             drop: "Indira Gandhi International Airport",
-            fare: "₹450",
+            fare: "CAD $450",
             type: "cab",
             status: "Completed"
         },
         {
             id: "GEO112ABC",
             date: "22 June 2026, 08:15 PM",
-            pickup: "Sector 15, Rohini",
+            pickup: "Sector 15, Mississauga",
             drop: "Pacific Mall, Subhash Nagar",
-            fare: "₹120",
+            fare: "CAD $120",
             type: "bike",
             status: "Completed"
         },
@@ -40,7 +40,7 @@ export default function TripHistory() {
             date: "20 June 2026, 05:45 PM",
             pickup: "Hauz Khas Village",
             drop: "DLF Cyber City",
-            fare: "₹280",
+            fare: "CAD $280",
             type: "auto",
             status: "Completed"
         }
@@ -113,3 +113,6 @@ export default function TripHistory() {
         </div>
     );
 }
+
+
+

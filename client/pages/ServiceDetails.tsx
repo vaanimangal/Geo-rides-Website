@@ -12,14 +12,14 @@ import Footer from "@/components/Footer";
 const hotelData = [
     {
         id: 1,
-        name: "The Oberoi New Delhi",
-        city: "New Delhi",
+        name: "The Oberoi New Toronto",
+        city: "New Toronto",
         stars: 5,
         pricePerNight: 12500,
         image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=350&fit=crop",
-        address: "Dr. Zakir Hussain Marg, New Delhi 110003",
-        phone: "+91 11 2436 3030",
-        email: "reservations.newdelhi@oberoihotels.com",
+        address: "Dr. Zakir Hussain Marg, New Toronto 110003",
+        phone: "+1 11 2436 3030",
+        email: "reservations.newToronto@oberoihotels.com",
         lat: 28.5987,
         lng: 77.2431,
         amenities: ["Free WiFi", "Pool", "Breakfast", "Spa"],
@@ -31,14 +31,14 @@ const hotelData = [
     },
     {
         id: 2,
-        name: "Taj Mahal Palace, Mumbai",
-        city: "Mumbai",
+        name: "Taj Mahal Palace, Vancouver",
+        city: "Vancouver",
         stars: 5,
         pricePerNight: 15000,
         image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600&h=350&fit=crop",
-        address: "Apollo Bunder, Colaba, Mumbai 400001",
-        phone: "+91 22 6665 3366",
-        email: "tajmahal.mumbai@tajhotels.com",
+        address: "Apollo Bunder, Colaba, Vancouver 400001",
+        phone: "+1 22 6665 3366",
+        email: "tajmahal.Vancouver@tajhotels.com",
         lat: 18.9220,
         lng: 72.8337,
         amenities: ["Free WiFi", "Pool", "Breakfast", "Concierge"],
@@ -50,13 +50,13 @@ const hotelData = [
     },
     {
         id: 3,
-        name: "ITC Grand Chola, Chennai",
-        city: "Chennai",
+        name: "ITC Grand Chola, hamilton",
+        city: "hamilton",
         stars: 5,
         pricePerNight: 9500,
         image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&h=350&fit=crop",
-        address: "Mount Road, Guindy, Chennai 600032",
-        phone: "+91 44 2220 0000",
+        address: "Mount Road, Guindy, hamilton 600032",
+        phone: "+1 44 2220 0000",
         email: "reservations@itcgrandchola.in",
         lat: 13.0105,
         lng: 80.2201,
@@ -69,13 +69,13 @@ const hotelData = [
     },
     {
         id: 4,
-        name: "Leela Palace Bengaluru",
-        city: "Bengaluru",
+        name: "Leela Palace Montreal",
+        city: "Montreal",
         stars: 5,
         pricePerNight: 11000,
         image: "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=600&h=350&fit=crop",
-        address: "23 HAL Airport Road, Bengaluru 560008",
-        phone: "+91 80 2521 1234",
+        address: "23 HAL Airport Road, Montreal 560008",
+        phone: "+1 80 2521 1234",
         email: "res.blr@theleela.com",
         lat: 12.9597,
         lng: 77.6484,
@@ -88,14 +88,14 @@ const hotelData = [
     },
     {
         id: 5,
-        name: "Radisson Blu Jaipur",
-        city: "Jaipur",
+        name: "Radisson Blu Winnipeg",
+        city: "Winnipeg",
         stars: 4,
         pricePerNight: 5500,
         image: "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&h=350&fit=crop",
-        address: "Jawahar Lal Nehru Marg, Jaipur 302017",
-        phone: "+91 141 661 7777",
-        email: "info.rbjaipur@radissonblu.com",
+        address: "Jawahar Lal Nehru Marg, Winnipeg 302017",
+        phone: "+1 141 661 7777",
+        email: "info.rbWinnipeg@radissonblu.com",
         lat: 26.8900,
         lng: 75.7950,
         amenities: ["Free WiFi", "Pool", "Breakfast", "Parking"],
@@ -107,13 +107,13 @@ const hotelData = [
     },
     {
         id: 6,
-        name: "Novotel Hyderabad",
-        city: "Hyderabad",
+        name: "Novotel Edmonton",
+        city: "Edmonton",
         stars: 4,
         pricePerNight: 6200,
         image: "https://images.unsplash.com/photo-1551882547-ff40c4a49f50?w=600&h=350&fit=crop",
-        address: "Novotel & HICC Complex, Hi-Tech City, Hyderabad 500081",
-        phone: "+91 40 6622 4422",
+        address: "Novotel & HICC Complex, Hi-Tech City, Edmonton 500081",
+        phone: "+1 40 6622 4422",
         email: "h5574-re@accor.com",
         lat: 17.4483,
         lng: 78.3915,
@@ -143,6 +143,272 @@ const hotelData = [
             { type: "Suite", price: 55000, available: false },
         ],
     },
+    {
+        id: 3,
+        name: "ITC Grand Chola, hamilton",
+        city: "hamilton",
+        stars: 5,
+        pricePerNight: 9500,
+        image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&h=350&fit=crop",
+        address: "Mount Road, Guindy, hamilton 600032",
+        phone: "+1 44 2220 0000",
+        email: "reservations@itcgrandchola.in",
+        lat: 13.0105,
+        lng: 80.2201,
+        amenities: ["Free WiFi", "Pool", "Spa", "Restaurant"],
+        roomTypes: [
+            { type: "Superior Room", price: 9500, available: true },
+            { type: "Executive Club", price: 14000, available: true },
+            { type: "Grand Chola Suite", price: 32000, available: true },
+        ],
+    },
+    {
+        id: 3,
+        name: "ITC Grand Chola, hamilton",
+        city: "hamilton",
+        stars: 5,
+        pricePerNight: 9500,
+        image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&h=350&fit=crop",
+        address: "Mount Road, Guindy, hamilton 600032",
+        phone: "+1 44 2220 0000",
+        email: "reservations@itcgrandchola.in",
+        lat: 13.0105,
+        lng: 80.2201,
+        amenities: ["Free WiFi", "Pool", "Spa", "Restaurant"],
+        roomTypes: [
+            { type: "Superior Room", price: 9500, available: true },
+            { type: "Executive Club", price: 14000, available: true },
+            { type: "Grand Chola Suite", price: 32000, available: true },
+        ],
+    },
+    {
+        id: 3,
+        name: "ITC Grand Chola, hamilton",
+        city: "hamilton",
+        stars: 5,
+        pricePerNight: 9500,
+        image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&h=350&fit=crop",
+        address: "Mount Road, Guindy, hamilton 600032",
+        phone: "+1 44 2220 0000",
+        email: "reservations@itcgrandchola.in",
+        lat: 13.0105,
+        lng: 80.2201,
+        amenities: ["Free WiFi", "Pool", "Spa", "Restaurant"],
+        roomTypes: [
+            { type: "Superior Room", price: 9500, available: true },
+            { type: "Executive Club", price: 14000, available: true },
+            { type: "Grand Chola Suite", price: 32000, available: true },
+        ],
+    },
+    {
+        id: 3,
+        name: "ITC Grand Chola, hamilton",
+        city: "hamilton",
+        stars: 5,
+        pricePerNight: 9500,
+        image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&h=350&fit=crop",
+        address: "Mount Road, Guindy, hamilton 600032",
+        phone: "+1 44 2220 0000",
+        email: "reservations@itcgrandchola.in",
+        lat: 13.0105,
+        lng: 80.2201,
+        amenities: ["Free WiFi", "Pool", "Spa", "Restaurant"],
+        roomTypes: [
+            { type: "Superior Room", price: 9500, available: true },
+            { type: "Executive Club", price: 14000, available: true },
+            { type: "Grand Chola Suite", price: 32000, available: true },
+        ],
+    },
+    {
+        id: 3,
+        name: "ITC Grand Chola, hamilton",
+        city: "hamilton",
+        stars: 5,
+        pricePerNight: 9500,
+        image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&h=350&fit=crop",
+        address: "Mount Road, Guindy, hamilton 600032",
+        phone: "+1 44 2220 0000",
+        email: "reservations@itcgrandchola.in",
+        lat: 13.0105,
+        lng: 80.2201,
+        amenities: ["Free WiFi", "Pool", "Spa", "Restaurant"],
+        roomTypes: [
+            { type: "Superior Room", price: 9500, available: true },
+            { type: "Executive Club", price: 14000, available: true },
+            { type: "Grand Chola Suite", price: 32000, available: true },
+        ],
+    },
+    {
+        id: 3,
+        name: "ITC Grand Chola, hamilton",
+        city: "hamilton",
+        stars: 5,
+        pricePerNight: 9500,
+        image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&h=350&fit=crop",
+        address: "Mount Road, Guindy, hamilton 600032",
+        phone: "+1 44 2220 0000",
+        email: "reservations@itcgrandchola.in",
+        lat: 13.0105,
+        lng: 80.2201,
+        amenities: ["Free WiFi", "Pool", "Spa", "Restaurant"],
+        roomTypes: [
+            { type: "Superior Room", price: 9500, available: true },
+            { type: "Executive Club", price: 14000, available: true },
+            { type: "Grand Chola Suite", price: 32000, available: true },
+        ],
+    },
+    {
+        id: 3,
+        name: "ITC Grand Chola, hamilton",
+        city: "hamilton",
+        stars: 5,
+        pricePerNight: 9500,
+        image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&h=350&fit=crop",
+        address: "Mount Road, Guindy, hamilton 600032",
+        phone: "+1 44 2220 0000",
+        email: "reservations@itcgrandchola.in",
+        lat: 13.0105,
+        lng: 80.2201,
+        amenities: ["Free WiFi", "Pool", "Spa", "Restaurant"],
+        roomTypes: [
+            { type: "Superior Room", price: 9500, available: true },
+            { type: "Executive Club", price: 14000, available: true },
+            { type: "Grand Chola Suite", price: 32000, available: true },
+        ],
+    },
+    {
+        id: 3,
+        name: "ITC Grand Chola, hamilton",
+        city: "hamilton",
+        stars: 5,
+        pricePerNight: 9500,
+        image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&h=350&fit=crop",
+        address: "Mount Road, Guindy, hamilton 600032",
+        phone: "+1 44 2220 0000",
+        email: "reservations@itcgrandchola.in",
+        lat: 13.0105,
+        lng: 80.2201,
+        amenities: ["Free WiFi", "Pool", "Spa", "Restaurant"],
+        roomTypes: [
+            { type: "Superior Room", price: 9500, available: true },
+            { type: "Executive Club", price: 14000, available: true },
+            { type: "Grand Chola Suite", price: 32000, available: true },
+        ],
+    },
+    {
+        id: 3,
+        name: "ITC Grand Chola, hamilton",
+        city: "hamilton",
+        stars: 5,
+        pricePerNight: 9500,
+        image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&h=350&fit=crop",
+        address: "Mount Road, Guindy, hamilton 600032",
+        phone: "+1 44 2220 0000",
+        email: "reservations@itcgrandchola.in",
+        lat: 13.0105,
+        lng: 80.2201,
+        amenities: ["Free WiFi", "Pool", "Spa", "Restaurant"],
+        roomTypes: [
+            { type: "Superior Room", price: 9500, available: true },
+            { type: "Executive Club", price: 14000, available: true },
+            { type: "Grand Chola Suite", price: 32000, available: true },
+        ],
+    },
+    {
+        id: 3,
+        name: "ITC Grand Chola, hamilton",
+        city: "hamilton",
+        stars: 5,
+        pricePerNight: 9500,
+        image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&h=350&fit=crop",
+        address: "Mount Road, Guindy, hamilton 600032",
+        phone: "+1 44 2220 0000",
+        email: "reservations@itcgrandchola.in",
+        lat: 13.0105,
+        lng: 80.2201,
+        amenities: ["Free WiFi", "Pool", "Spa", "Restaurant"],
+        roomTypes: [
+            { type: "Superior Room", price: 9500, available: true },
+            { type: "Executive Club", price: 14000, available: true },
+            { type: "Grand Chola Suite", price: 32000, available: true },
+        ],
+    },
+    {
+        id: 3,
+        name: "ITC Grand Chola, hamilton",
+        city: "hamilton",
+        stars: 5,
+        pricePerNight: 9500,
+        image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&h=350&fit=crop",
+        address: "Mount Road, Guindy, hamilton 600032",
+        phone: "+1 44 2220 0000",
+        email: "reservations@itcgrandchola.in",
+        lat: 13.0105,
+        lng: 80.2201,
+        amenities: ["Free WiFi", "Pool", "Spa", "Restaurant"],
+        roomTypes: [
+            { type: "Superior Room", price: 9500, available: true },
+            { type: "Executive Club", price: 14000, available: true },
+            { type: "Grand Chola Suite", price: 32000, available: true },
+        ],
+    },
+    {
+        id: 3,
+        name: "ITC Grand Chola, hamilton",
+        city: "hamilton",
+        stars: 5,
+        pricePerNight: 9500,
+        image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&h=350&fit=crop",
+        address: "Mount Road, Guindy, hamilton 600032",
+        phone: "+1 44 2220 0000",
+        email: "reservations@itcgrandchola.in",
+        lat: 13.0105,
+        lng: 80.2201,
+        amenities: ["Free WiFi", "Pool", "Spa", "Restaurant"],
+        roomTypes: [
+            { type: "Superior Room", price: 9500, available: true },
+            { type: "Executive Club", price: 14000, available: true },
+            { type: "Grand Chola Suite", price: 32000, available: true },
+        ],
+    },
+    {
+        id: 3,
+        name: "ITC Grand Chola, hamilton",
+        city: "hamilton",
+        stars: 5,
+        pricePerNight: 9500,
+        image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&h=350&fit=crop",
+        address: "Mount Road, Guindy, hamilton 600032",
+        phone: "+1 44 2220 0000",
+        email: "reservations@itcgrandchola.in",
+        lat: 13.0105,
+        lng: 80.2201,
+        amenities: ["Free WiFi", "Pool", "Spa", "Restaurant"],
+        roomTypes: [
+            { type: "Superior Room", price: 9500, available: true },
+            { type: "Executive Club", price: 14000, available: true },
+            { type: "Grand Chola Suite", price: 32000, available: true },
+        ],
+    },
+    {
+        id: 3,
+        name: "ITC Grand Chola, hamilton",
+        city: "hamilton",
+        stars: 5,
+        pricePerNight: 9500,
+        image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&h=350&fit=crop",
+        address: "Mount Road, Guindy, hamilton 600032",
+        phone: "+1 44 2220 0000",
+        email: "reservations@itcgrandchola.in",
+        lat: 13.0105,
+        lng: 80.2201,
+        amenities: ["Free WiFi", "Pool", "Spa", "Restaurant"],
+        roomTypes: [
+            { type: "Superior Room", price: 9500, available: true },
+            { type: "Executive Club", price: 14000, available: true },
+            { type: "Grand Chola Suite", price: 32000, available: true },
+        ],
+    }
 ];
 
 // ── AVAILABILITY LOGIC ────────────────────────────────────────────────────────
@@ -273,7 +539,7 @@ function TravelAndStay() {
                                 <div className="flex justify-between items-start mb-2">
                                     <h3 className="text-xl font-black text-gray-900">{hotel.name}</h3>
                                     <div className="text-right">
-                                        <div className="text-2xl font-black text-geo-red">₹{hotel.pricePerNight.toLocaleString()}</div>
+                                        <div className="text-2xl font-black text-geo-red">CAD ${hotel.pricePerNight.toLocaleString()}</div>
                                         <div className="text-xs text-gray-400">per night</div>
                                     </div>
                                 </div>
@@ -318,7 +584,7 @@ function TravelAndStay() {
                                                 className="flex items-center justify-between bg-gray-50 rounded-xl px-4 py-2.5 border border-gray-100">
                                                 <div>
                                                     <span className="font-semibold text-sm text-gray-800">{room.type}</span>
-                                                    <span className="text-xs text-gray-500 ml-2">₹{room.price.toLocaleString()}/night</span>
+                                                    <span className="text-xs text-gray-500 ml-2">CAD ${room.price.toLocaleString()}/night</span>
                                                 </div>
                                                 {(checkIn && checkOut) ? (
                                                     avail ? (
@@ -460,7 +726,7 @@ function ParcelService() {
                                             ? "border-geo-red bg-geo-red/5 ring-1 ring-geo-red"
                                             : "border-gray-200 hover:border-gray-300"}`}>
                                         <div className="font-bold text-sm text-gray-900">{opt.label}</div>
-                                        <div className="text-xs text-gray-500">₹{opt.price}</div>
+                                        <div className="text-xs text-gray-500">CAD ${opt.price}</div>
                                     </button>
                                 ))}
                             </div>
@@ -469,7 +735,7 @@ function ParcelService() {
                         <div className="flex items-center justify-between p-4 bg-gray-50 rounded-2xl border border-gray-200">
                             <div>
                                 <p className="font-bold text-sm text-gray-900">⚡ Urgent Delivery</p>
-                                <p className="text-xs text-gray-500">Deliver within 2 hours (+₹100)</p>
+                                <p className="text-xs text-gray-500">Deliver within 2 hours (+CAD $100)</p>
                             </div>
                             <button onClick={() => setForm({ ...form, urgent: !form.urgent })}
                                 className={`w-11 h-6 flex items-center rounded-full p-1 transition-colors duration-300 ${form.urgent ? "bg-geo-red" : "bg-gray-300"}`}>
@@ -481,7 +747,7 @@ function ParcelService() {
                             <div className="bg-gray-50 rounded-2xl p-5 border border-gray-100 flex items-center justify-between">
                                 <div>
                                     <p className="text-xs text-gray-500 font-bold uppercase">Estimated Total</p>
-                                    <p className="text-3xl font-black text-gray-900">₹{totalPrice}</p>
+                                    <p className="text-3xl font-black text-gray-900">CAD ${totalPrice}</p>
                                     <p className="text-xs text-gray-400">{selected.label} weight{form.urgent ? " + urgent fee" : ""}</p>
                                 </div>
                                 <div className="text-right">
@@ -513,7 +779,7 @@ function ParcelService() {
                 {/* Features */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-8">
                     {[
-                        { icon: Shield, label: "Insured Delivery", desc: "Up to ₹10,000 item insurance included" },
+                        { icon: Shield, label: "Insured Delivery", desc: "Up to CAD $10,000 item insurance included" },
                         { icon: Clock, label: "Real-Time Tracking", desc: "Track your parcel every step of the way" },
                         { icon: MapPinCheck, label: "Doorstep Pickup", desc: "We come to you — no drop-off needed" },
                     ].map(({ icon: Icon, label, desc }) => (
@@ -571,8 +837,8 @@ function CabBooking({ type }: CabBookingProps) {
     };
 
     const recentDestinations = [
-        "CN Tower, Toronto, ON", "Connaught Place, Delhi", "Indira Gandhi International Airport",
-        "Pacific Mall, Subhash Nagar", "Sector 15, Rohini"
+        "CN Tower, Toronto, ON", "Union Station, Toronto", "Indira Gandhi International Airport",
+        "Pacific Mall, Subhash Nagar", "Sector 15, Mississauga"
     ];
 
     return (
@@ -623,7 +889,7 @@ function CabBooking({ type }: CabBookingProps) {
                             <div className="mt-6 p-4 bg-gray-50 border border-gray-150 rounded-2xl flex items-center justify-between shadow-sm">
                                 <div>
                                     <h4 className="font-bold text-xs text-gray-900 flex items-center gap-1.5">⚡ Priority Pickup</h4>
-                                    <p className="text-[10px] text-gray-500 leading-normal mt-0.5 max-w-[200px]">Skip queue, match instantly (Surcharge: ₹50)</p>
+                                    <p className="text-[10px] text-gray-500 leading-normal mt-0.5 max-w-[200px]">Skip queue, match instantly (Surcharge: CAD $50)</p>
                                 </div>
                                 <button onClick={() => setIsPriorityBooking(!isPriorityBooking)}
                                     title="Toggle priority pickup"
@@ -656,7 +922,7 @@ function CabBooking({ type }: CabBookingProps) {
                                             </div>
                                             <div>
                                                 <p className="text-xs text-gray-500 font-bold">ESTIMATED FARE</p>
-                                                <p className="text-xl font-bold text-gray-900">₹{fareEstimate}</p>
+                                                <p className="text-xl font-bold text-gray-900">CAD ${fareEstimate}</p>
                                             </div>
                                         </div>
                                         <div className="text-right">
@@ -737,3 +1003,6 @@ export default function ServiceDetails() {
     if (type === "parcel") return <ParcelService />;
     return <CabBooking type={type || "cab"} />;
 }
+
+
+

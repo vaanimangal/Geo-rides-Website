@@ -60,7 +60,7 @@ The following endpoints are available:
 {
   "fullName": "John Doe",
   "email": "john@example.com",
-  "phone": "+91 98765 43210",
+  "phone": "+1 98765 43210",
   "password": "password123",
   "confirmPassword": "password123"
 }
@@ -99,8 +99,8 @@ The following endpoints are available:
 - **Body:**
 ```json
 {
-  "pickupLocation": "123 Main St, Delhi",
-  "dropLocation": "456 Park Ave, Delhi",
+  "pickupLocation": "123 Main St, Toronto",
+  "dropLocation": "456 Park Ave, Toronto",
   "vehicleType": "cab"
 }
 ```
@@ -109,7 +109,7 @@ The following endpoints are available:
 {
   "message": "Ride booked successfully",
   "bookingId": "GEO123ABC",
-  "estimatedFare": "₹250",
+  "estimatedFare": "CAD $250",
   "estimatedTime": "5 mins"
 }
 ```
@@ -168,7 +168,7 @@ curl -X POST http://localhost:8000/api/register.php \
   -d '{
     "fullName": "John Doe",
     "email": "john@example.com",
-    "phone": "+91 98765 43210",
+    "phone": "+1 98765 43210",
     "password": "password123",
     "confirmPassword": "password123"
   }'
@@ -227,3 +227,4 @@ For production deployment:
 7. Add push notifications
 
 For questions or issues, refer to the inline comments in the PHP files.
+

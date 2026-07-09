@@ -7,3 +7,6 @@ export const notes = pgTable("notes", {
     .defaultNow()
     .notNull(),
 });
+
+
+

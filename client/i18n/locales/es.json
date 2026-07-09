@@ -124,7 +124,7 @@
     "emailContact": "Correo",
     "emailAddress": "support@georides.com",
     "phoneContact": "Teléfono",
-    "phoneNumber": "+91 9876 543 210",
+    "phoneNumber": "+1 9876 543 210",
     "locationContact": "Sede",
     "locationText": "Disponible en 50+ ciudades en India",
     "support24": "Soporte 24/7",
@@ -168,3 +168,6 @@
     "signIn": "Inicia sesión"
   }
 }
+
+
+

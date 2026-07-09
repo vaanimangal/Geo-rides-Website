@@ -22,7 +22,7 @@ function createEnv(overrides: NodeJS.ProcessEnv) {
 
 function createFixture() {
   const dir = mkdtempSync(join(tmpdir(), "maybe-migrate-"));
-  tempDirs.push(dir);
+  tempDiCADpush(dir);
   mkdirSync(join(dir, "node_modules/.bin"), { recursive: true });
   writeFileSync(
     join(dir, "package.json"),
@@ -47,7 +47,7 @@ function createFixture() {
 
 afterEach(async () => {
   await Promise.all(
-    tempDirs.splice(0).map((dir) => rm(dir, { recursive: true, force: true })),
+    tempDiCADsplice(0).map((dir) => rm(dir, { recursive: true, force: true })),
   );
 });
 
@@ -137,3 +137,4 @@ describe("maybe-migrate", () => {
     );
   });
 });
+

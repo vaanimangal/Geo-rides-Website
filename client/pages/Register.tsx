@@ -32,14 +32,14 @@ export default function Register() {
   const validateForm = () => {
     const errors: Record<string, string> = {};
 
-    if (!formData.fullName.trim()) errors.fullName = "Name is required";
-    if (!formData.email.includes("@")) errors.email = "Valid email required";
+    if (!formData.fullName.trim()) errorsfullName = "Name is required";
+    if (!formData.email.includes("@")) errorsemail = "Valid email required";
     if (!formData.phone || formData.phone.length < 10)
-      errors.phone = "Valid phone required";
+      errorsphone = "Valid phone required";
     if (formData.password.length < 6)
-      errors.password = "Password must be at least 6 characters";
+      errorspassword = "Password must be at least 6 characters";
     if (formData.password !== formData.confirmPassword)
-      errors.confirmPassword = "Passwords don't match";
+      errorsconfirmPassword = "Passwords don't match";
 
     setFieldErrors(errors);
     return Object.keys(errors).length === 0;
@@ -194,11 +194,11 @@ export default function Register() {
                     value={formData.fullName}
                     onChange={handleChange}
                     placeholder="John Doe"
-                    className={`w-full pl-12 pr-4 py-3 bg-white/5 border rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-geo-red focus:ring-1 focus:ring-geo-red transition-all ${fieldErrors.fullName ? "border-red-500" : "border-white/10"
+                    className={`w-full pl-12 pr-4 py-3 bg-white/5 border rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-geo-red focus:ring-1 focus:ring-geo-red transition-all ${fielderrorsfullName ? "border-red-500" : "border-white/10"
                       }`}
                   />
                 </div>
-                {fieldErrors.fullName && <p className="text-red-400 text-xs mt-1.5 ml-1">{fieldErrors.fullName}</p>}
+                {fielderrorsfullName && <p className="text-red-400 text-xs mt-1.5 ml-1">{fielderrorsfullName}</p>}
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -215,11 +215,11 @@ export default function Register() {
                       value={formData.email}
                       onChange={handleChange}
                       placeholder="you@example.com"
-                      className={`w-full pl-12 pr-4 py-3 bg-white/5 border rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-geo-red focus:ring-1 focus:ring-geo-red transition-all ${fieldErrors.email ? "border-red-500" : "border-white/10"
+                      className={`w-full pl-12 pr-4 py-3 bg-white/5 border rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-geo-red focus:ring-1 focus:ring-geo-red transition-all ${fielderrorsemail ? "border-red-500" : "border-white/10"
                         }`}
                     />
                   </div>
-                  {fieldErrors.email && <p className="text-red-400 text-xs mt-1.5 ml-1">{fieldErrors.email}</p>}
+                  {fielderrorsemail && <p className="text-red-400 text-xs mt-1.5 ml-1">{fielderrorsemail}</p>}
                 </div>
 
                 {/* Phone */}
@@ -234,12 +234,12 @@ export default function Register() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="+91 98765 43210"
-                      className={`w-full pl-12 pr-4 py-3 bg-white/5 border rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-geo-red focus:ring-1 focus:ring-geo-red transition-all ${fieldErrors.phone ? "border-red-500" : "border-white/10"
+                      placeholder="+1 98765 43210"
+                      className={`w-full pl-12 pr-4 py-3 bg-white/5 border rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-geo-red focus:ring-1 focus:ring-geo-red transition-all ${fielderrorsphone ? "border-red-500" : "border-white/10"
                         }`}
                     />
                   </div>
-                  {fieldErrors.phone && <p className="text-red-400 text-xs mt-1.5 ml-1">{fieldErrors.phone}</p>}
+                  {fielderrorsphone && <p className="text-red-400 text-xs mt-1.5 ml-1">{fielderrorsphone}</p>}
                 </div>
               </div>
 
@@ -256,7 +256,7 @@ export default function Register() {
                     value={formData.password}
                     onChange={handleChange}
                     placeholder="••••••••"
-                    className={`w-full pl-12 pr-12 py-3 bg-white/5 border rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-geo-red focus:ring-1 focus:ring-geo-red transition-all ${fieldErrors.password ? "border-red-500" : "border-white/10"
+                    className={`w-full pl-12 pr-12 py-3 bg-white/5 border rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-geo-red focus:ring-1 focus:ring-geo-red transition-all ${fielderrorspassword ? "border-red-500" : "border-white/10"
                       }`}
                   />
                   <button
@@ -267,7 +267,7 @@ export default function Register() {
                     {showPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
                   </button>
                 </div>
-                {fieldErrors.password && <p className="text-red-400 text-xs mt-1.5 ml-1">{fieldErrors.password}</p>}
+                {fielderrorspassword && <p className="text-red-400 text-xs mt-1.5 ml-1">{fielderrorspassword}</p>}
               </div>
 
               {/* Confirm Password */}
@@ -283,7 +283,7 @@ export default function Register() {
                     value={formData.confirmPassword}
                     onChange={handleChange}
                     placeholder="••••••••"
-                    className={`w-full pl-12 pr-12 py-3 bg-white/5 border rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-geo-red focus:ring-1 focus:ring-geo-red transition-all ${fieldErrors.confirmPassword ? "border-red-500" : "border-white/10"
+                    className={`w-full pl-12 pr-12 py-3 bg-white/5 border rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-geo-red focus:ring-1 focus:ring-geo-red transition-all ${fielderrorsconfirmPassword ? "border-red-500" : "border-white/10"
                       }`}
                   />
                   <button
@@ -294,7 +294,7 @@ export default function Register() {
                     {showConfirmPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
                   </button>
                 </div>
-                {fieldErrors.confirmPassword && <p className="text-red-400 text-xs mt-1.5 ml-1">{fieldErrors.confirmPassword}</p>}
+                {fielderrorsconfirmPassword && <p className="text-red-400 text-xs mt-1.5 ml-1">{fielderrorsconfirmPassword}</p>}
               </div>
 
               <motion.button
@@ -323,3 +323,7 @@ export default function Register() {
     </div>
   );
 }
+
+
+
+

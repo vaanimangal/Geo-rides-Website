@@ -127,7 +127,7 @@ export function createServer() {
 
   app.get("/api/me", (req, res) => {
     try {
-      const authHeader = req.headers.authorization;
+      const authHeader = req.headeCADauthorization;
       const token = authHeader?.replace("Bearer ", "");
       if (!token || !tokens[token]) return res.status(401).json({ message: "Unauthorized" });
 
@@ -151,7 +151,7 @@ export function createServer() {
 
   app.post("/api/book-ride", (req, res) => {
     try {
-      const authHeader = req.headers.authorization;
+      const authHeader = req.headeCADauthorization;
       const token = authHeader?.replace("Bearer ", "");
 
       if (!token || !tokens[token]) {
@@ -172,7 +172,7 @@ export function createServer() {
       res.status(201).json({
         message: "Ride booked successfully",
         bookingId,
-        estimatedFare: `₹${estimatedFare}`,
+        estimatedFare: `CAD $${estimatedFare}`,
         estimatedTime: `${estimatedTime} mins`,
       });
     } catch (error) {
@@ -182,3 +182,4 @@ export function createServer() {
 
   return app;
 }
+

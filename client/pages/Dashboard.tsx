@@ -36,7 +36,7 @@ export default function Dashboard() {
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <Header />
       <main className="flex-1 pt-24 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        
+
         {/* Welcome Section */}
         <section className="bg-white rounded-3xl shadow-sm border border-gray-100 p-8 flex flex-col md:flex-row items-center justify-between mb-8">
           <div className="flex items-center space-x-6">
@@ -57,7 +57,7 @@ export default function Dashboard() {
             </div>
             <div>
               <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider">Geopay Balance</p>
-              <p className="text-xl font-bold text-gray-900">₹1,250.00</p>
+              <p className="text-xl font-bold text-gray-900">CAD $1,250.00</p>
             </div>
           </div>
         </section>
@@ -86,7 +86,7 @@ export default function Dashboard() {
 
         {/* Status Sections */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          
+
           {/* Active Bookings */}
           <section className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
             <div className="flex items-center justify-between mb-6">
@@ -95,46 +95,46 @@ export default function Dashboard() {
                 Active Bookings
               </h2>
             </div>
-            
+
             <div className="bg-orange-50 border border-orange-100 rounded-2xl p-6 relative overflow-hidden">
-               <div className="absolute top-0 right-0 w-24 h-24 bg-orange-200 blur-3xl opacity-50 rounded-full translate-x-1/2 -translate-y-1/2"></div>
-               <div className="flex justify-between items-start relative z-10 mb-4">
-                 <div>
-                   <span className="inline-block px-3 py-1 bg-white text-orange-600 font-bold text-xs rounded-full uppercase tracking-wider shadow-sm mb-2">Finding Driver...</span>
-                   <p className="font-bold text-gray-900">Standard Cab</p>
-                 </div>
-                 <div className="text-right">
-                   <p className="font-bold text-gray-900">₹320</p>
-                   <p className="text-sm text-gray-500">Est. 4 mins</p>
-                 </div>
-               </div>
-               <div className="space-y-3 relative z-10">
-                 <div className="flex items-center space-x-3 text-sm">
-                   <div className="w-2 h-2 rounded-full bg-blue-500"></div>
-                   <p className="text-gray-700">Central Station (Pickup)</p>
-                 </div>
-                 <div className="flex items-center space-x-3 text-sm">
-                   <div className="w-2 h-2 rounded-full bg-geo-red"></div>
-                   <p className="text-gray-700">Tech Park, Sector 4 (Drop)</p>
-                 </div>
-               </div>
+              <div className="absolute top-0 right-0 w-24 h-24 bg-orange-200 blur-3xl opacity-50 rounded-full translate-x-1/2 -translate-y-1/2"></div>
+              <div className="flex justify-between items-start relative z-10 mb-4">
+                <div>
+                  <span className="inline-block px-3 py-1 bg-white text-orange-600 font-bold text-xs rounded-full uppercase tracking-wider shadow-sm mb-2">Finding Driver...</span>
+                  <p className="font-bold text-gray-900">Standard Cab</p>
+                </div>
+                <div className="text-right">
+                  <p className="font-bold text-gray-900">CAD $320</p>
+                  <p className="text-sm text-gray-500">Est. 4 mins</p>
+                </div>
+              </div>
+              <div className="space-y-3 relative z-10">
+                <div className="flex items-center space-x-3 text-sm">
+                  <div className="w-2 h-2 rounded-full bg-blue-500"></div>
+                  <p className="text-gray-700">Central Station (Pickup)</p>
+                </div>
+                <div className="flex items-center space-x-3 text-sm">
+                  <div className="w-2 h-2 rounded-full bg-geo-red"></div>
+                  <p className="text-gray-700">Tech Park, Sector 4 (Drop)</p>
+                </div>
+              </div>
             </div>
           </section>
 
           {/* Recent Rides */}
           <section className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
-             <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center justify-between mb-6">
               <h2 className="text-xl font-bold text-gray-900 flex items-center">
                 <Clock className="w-5 h-5 mr-2 text-gray-400" />
                 Recent Rides
               </h2>
               <Link to="/history" className="text-sm font-bold text-geo-red hover:text-red-600 transition-colors">View All</Link>
             </div>
-            
+
             <div className="space-y-4">
               {[
-                { date: "Oct 12, 09:30 AM", type: "Standard Cab", status: "Completed", amount: "₹450" },
-                { date: "Oct 10, 06:15 PM", type: "Premium SUV", status: "Completed", amount: "₹850" }
+                { date: "Oct 12, 09:30 AM", type: "Standard Cab", status: "Completed", amount: "CAD $450" },
+                { date: "Oct 10, 06:15 PM", type: "Premium SUV", status: "Completed", amount: "CAD $850" }
               ].map((ride, i) => (
                 <div key={i} className="flex items-center justify-between p-4 rounded-2xl hover:bg-gray-50 transition-colors border border-transparent hover:border-gray-100">
                   <div className="flex items-center space-x-4">
@@ -161,3 +161,6 @@ export default function Dashboard() {
     </div>
   );
 }
+
+
+

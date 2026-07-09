@@ -801,7 +801,7 @@ export default function Index() {
                     {t('contact.phoneContact')}
                   </h4>
                   <a
-                    href="tel:+919876543210"
+                    href="tel:+19876543210"
                     className="text-gray-600 hover:text-geo-red transition"
                   >
                     {t('contact.phoneNumber')}
@@ -843,3 +843,6 @@ export default function Index() {
     </div>
   );
 }
+
+
+
