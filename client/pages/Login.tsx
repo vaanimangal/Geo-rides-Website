@@ -194,15 +194,26 @@ export default function Login() {
               <span>Sign in with Google</span>
             </motion.button>
 
-            <p className="text-center text-gray-400 text-sm mt-8 relative z-10">
-              {t("login.noAccount", "Don't have an account?")}{" "}
-              <Link
-                to="/register"
-                className="text-geo-red hover:text-red-400 font-bold transition-colors"
-              >
-                {t("login.createOne", "Create one now")}
-              </Link>
-            </p>
+            <div className="text-center text-gray-400 text-sm mt-8 relative z-10 space-y-3">
+              <div className="flex justify-center items-center gap-1.5 flex-wrap">
+                <span>{t("login.noAccount", "Don't have an account?")}</span>
+                <Link
+                  to="/register"
+                  className="text-geo-red hover:text-red-400 font-bold transition-colors"
+                >
+                  {t("login.createRiderAccount", "Register as Rider")}
+                </Link>
+              </div>
+              <div className="pt-3 border-t border-white/10 flex justify-center items-center gap-1.5 flex-wrap">
+                <span>Want to partner with us?</span>
+                <Link
+                  to="/register-driver"
+                  className="text-geo-red hover:text-red-400 font-bold transition-colors hover:underline"
+                >
+                  Register as Driver
+                </Link>
+              </div>
+            </div>
           </div>
         </motion.div>
       </div>

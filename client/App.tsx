@@ -11,6 +11,7 @@ import { ThemeProvider } from "./components/ThemeContext";
 import Index from "./pages/Index";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import RegisterDriver from "./pages/RegisterDriver";
 import Dashboard from "./pages/Dashboard";
 import Services from "./pages/Services";
 import BookingConfirmation from "./pages/BookingConfirmation";
@@ -41,6 +42,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/register-driver" element={<RegisterDriver />} />
             <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route path="/service/:type" element={<ServiceDetails />} />
             <Route path="/services" element={<Services />} />
