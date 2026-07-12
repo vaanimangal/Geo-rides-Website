@@ -1,3 +1,5 @@
+import bcrypt from "bcryptjs";
+import { eq } from "drizzle-orm";
 import "dotenv/config";
 import express from "express";
 import cors from "cors";
@@ -36,9 +38,11 @@ async function tryInitDB() {
     useRealDB = true;
     console.log("✅ Real database connected");
   } catch (e) {
-    useRealDB = false;
-    console.log("⚠️  No database connection — using local JSON fallback store");
-  }
+  useRealDB = false;
+  console.error("DATABASE ERROR:");
+  console.error(e);
+  console.log("⚠️ No database connection — using local JSON fallback store");
+}
 }
 
 export function createServer() {
@@ -145,14 +149,21 @@ export function createServer() {
         const { eq } = await import("drizzle-orm");
         const usersList = await db.select().from(schema.users).where(eq(schema.users.email, email)).limit(1);
         const user = usersList[0];
-        if (!user || user.password !== password)
+        if (!user) {
           return res.status(401).json({ message: "Invalid email or password" });
+        }
+        const isMatch = await bcrypt.compare(password, user.password);
+        if (!isMatch) {
+          return res.status(401).json({ message: "Invalid email or password" });
+        }
 
         const token = Math.random().toString(36).substring(7) + Date.now();
         await db.update(schema.users).set({ apiToken: token }).where(eq(schema.users.id, user.id));
 
         return res.json({
-          message: "Login successful", token, userId: user.id.toString(), role: "user",
+          message: "Login successful",
+          token,
+          userId: user.id.toString(), role: "user",
         });
       }
 
