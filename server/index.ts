@@ -141,6 +141,7 @@ export function createServer() {
   // ── LOGIN ────────────────────────────────────────────────────────────────────
   app.post("/api/login", async (req, res) => {
     try {
+      console.log("Login Request:", req.body);
       const { email, password } = req.body;
       if (!email || !password)
         return res.status(400).json({ message: "Email and password are required" });
@@ -153,13 +154,16 @@ export function createServer() {
           return res.status(401).json({ message: "Invalid email or password" });
         }
         const isMatch = await bcrypt.compare(password, user.password);
+
+        console.log("User Found:", user.email);
+        console.log("Password Match:", isMatch);
         if (!isMatch) {
           return res.status(401).json({ message: "Invalid email or password" });
         }
 
         const token = Math.random().toString(36).substring(7) + Date.now();
         await db.update(schema.users).set({ apiToken: token }).where(eq(schema.users.id, user.id));
-
+        console.log("Sending Login Response");
         return res.json({
           message: "Login successful",
           token,
