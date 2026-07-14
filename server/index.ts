@@ -204,6 +204,103 @@ export function createServer() {
     }
   });
 
+  app.post("/api/bookings", async (req, res) => {
+  try {
+    const {
+      userId,
+      pickupLocation,
+      dropLocation,
+      vehicleType,
+      estimatedFare,
+      pickupLat,
+      pickupLng,
+      dropLat,
+      dropLng,
+    } = req.body;
+
+    if (!userId || !pickupLocation || !dropLocation || !vehicleType) {
+      return res.status(400).json({
+        message: "All required fields are mandatory",
+      });
+    }
+
+    const bookingId = "GR" + Date.now();
+
+    const [booking] = await db
+      .insert(schema.bookings)
+      .values({
+        bookingId,
+        userId: Number(userId),
+        pickupLocation,
+        dropLocation,
+        vehicleType,
+        estimatedFare,
+        pickupLat,
+        pickupLng,
+        dropLat,
+        dropLng,
+        status: "pending",
+      })
+      .returning();
+
+    res.status(201).json({
+      message: "Ride booked successfully",
+      booking,
+    });
+
+  } catch (error) {
+    console.error(error);
+
+    res.status(500).json({
+      message: "Booking failed",
+    });
+  }
+});
+
+app.get("/api/bookings", async (_req, res) => {
+  try {
+    const bookings = await db
+      .select()
+      .from(schema.bookings);
+
+    return res.json(bookings);
+
+  } catch (error) {
+    console.error(error);
+
+    return res.status(500).json({
+      message: "Failed to fetch bookings",
+    });
+  }
+});
+app.get("/api/bookings/:id", async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { eq } = await import("drizzle-orm");
+
+    const booking = await db
+      .select()
+      .from(schema.bookings)
+      .where(eq(schema.bookings.id, Number(id)))
+      .limit(1);
+
+    if (booking.length === 0) {
+      return res.status(404).json({
+        message: "Booking not found",
+      });
+    }
+
+    return res.json(booking[0]);
+
+  } catch (error) {
+    console.error(error);
+
+    return res.status(500).json({
+      message: "Failed to fetch booking",
+    });
+  }
+});
+
   // ── ME ───────────────────────────────────────────────────────────────────────
   app.get("/api/me", async (req, res) => {
     try {
