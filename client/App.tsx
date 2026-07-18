@@ -1,6 +1,6 @@
+
 import "./global.css";
 import "@/i18n/config";
-
 import { Toaster } from "@/components/ui/toaster";
 import { createRoot } from "react-dom/client";
 import { Toaster as Sonner } from "@/components/ui/sonner";
@@ -14,6 +14,7 @@ import Register from "./pages/Register";
 import RegisterDriver from "./pages/RegisterDriver";
 import Dashboard from "./pages/Dashboard";
 import Services from "./pages/Services";
+import RideBooking from "./pages/RideBooking";
 import BookingConfirmation from "./pages/BookingConfirmation";
 import NotFound from "./pages/NotFound";
 
@@ -46,6 +47,7 @@ const App = () => (
             <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route path="/service/:type" element={<ServiceDetails />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/ride-booking" element={<RideBooking />} />
             <Route path="/safety" element={<Safety />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/contact" element={<Contact />} />

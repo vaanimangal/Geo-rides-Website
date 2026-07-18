@@ -87,6 +87,18 @@
       "isVerified": false,
       "verificationStatus": "pending",
       "status": "offline"
+    },
+    {
+      "id": "1784388821529",
+      "fullName": "Chehak",
+      "email": "chehak610@gmail.com",
+      "phone": "9991416579",
+      "password": "12345678",
+      "role": "user",
+      "profilePhoto": null,
+      "rating": 4.5,
+      "totalRides": 0,
+      "createdAt": "2026-07-18T15:33:41.529Z"
     }
   ],
   "drivers": [],
@@ -109,7 +121,8 @@
     "n11ms1783352876348": "1783352876327",
     "5u39js1783396320249": "1783396320234",
     "2qqdpd1783655709727": "1783655709712",
-    "wrrydr1783708310657": "1783708310643"
+    "wrrydr1783708310657": "1783708310643",
+    "lnh7ct1784388821613": "1784388821529"
   },
   "adminTokens": {}
 }

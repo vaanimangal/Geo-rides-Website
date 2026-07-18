@@ -7,6 +7,7 @@ import {
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import RideBooking from "./RideBooking";
 
 // ── HOTEL DATA ────────────────────────────────────────────────────────────────
 const hotelData = [
@@ -718,5 +719,5 @@ export default function ServiceDetails() {
     const { type } = useParams<{ type: string }>();
     if (type === "travel") return <TravelAndStay />;
     if (type === "parcel") return <ParcelService />;
-    return <CabBooking type={type || "cab"} />;
+   return <RideBooking />;
 }
